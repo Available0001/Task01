@@ -1,0 +1,35 @@
+--Step 1: Create the employees table
+CREATE TABLE EmployeesTable (
+    id INTEGER PRIMARY KEY,
+    First_name VARCHAR(10),
+    Last_name VARCHAR(10),
+    Department VARCHAR(20),
+    Salary INT);
+
+
+--Step 2: Insert the provided data into the employees table
+INSERT INTO EmployeesTable VALUES(1,'John', 'Doe', 'HR', 45000);
+INSERT INTO EmployeesTable VALUES(2,'Jane', 'Smith', 'IT', 75000);
+INSERT INTO EmployeesTable VALUES(3,'Mike', 'Johnson', 'Finance', 85000);
+INSERT INTO EmployeesTable VALUES(4,'Emily', 'Davis', 'IT', 60000);
+INSERT INTO EmployeesTable VALUES(5,'Sarah', 'Wilson', 'Marketing', 50000);
+
+
+--Step 3: Write and execute a query to find employees earning more than $50,000
+SELECT First_name, Last_name, Department FROM EmployeesTable WHERE Salary > 50000;
+
+--Explanation:
+/* Step 1: The `CREATE TABLE` statement creates a table named `employees` with columns `id`, `first_name`, `last_name`,
+`department`, and `salary`. The `id` column is specified as the primary key.
+  
+Step 2: The `INSERT INTO` statement inserts the provided data into the `employees` table. Each `INSERT` statement specifies
+values for `first_name`, `last_name`, `department`, and `salary` columns.
+
+Step 3: The `SELECT` statement retrieves data from the `employees` table. It selects `first_name`, `last_name`, and 
+`department` columns where the `salary` is greater than $50,000 (`salary > 50000`).
+
+Query Result:
+Executing the `SELECT` query will return the following result based on the provided data:
+*/
+
+
