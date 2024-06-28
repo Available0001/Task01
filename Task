@@ -32,4 +32,9 @@ Query Result:
 Executing the `SELECT` query will return the following result based on the provided data:
 */
 
-
+Final Result
+first_name | last_name | department
+-----------------------------------
+Jane       | Smith     | IT
+Mike       | Johnson   | Finance
+Emily      | Davis     | IT
